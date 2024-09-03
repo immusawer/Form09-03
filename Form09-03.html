@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Text Fields and Radio Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+.radio-group p {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.radio-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<body>
+    <form class="form-container">
+        <div class="form-group">
+            <label for="field1">Name: </label>
+            <input type="text" id="field1" name="field1">
+        </div>
+        <div class="form-group">
+            <label for="field2">Lastname: </label>
+            <input type="text" id="field2" name="field2">
+        </div>
+        <div class="form-group">
+            <label for="field3">Email: </label>
+            <input type="text" id="field3" name="field3">
+        </div>
+        <div class="form-group">
+            <label for="field4">Password: </label>
+            <input type="password" id="field4" name="field4">
+        </div>
+        <div class="form-group">
+            <label for="field5">Confirm Password: </label>
+            <input type="password" id="field5" name="field5">
+        </div>
+
+        <div class="radio-group">
+            <p>Education Level: </p>
+            <label>
+                <input type="radio" name="option" value="option1">
+                12 Grade
+            </label>
+            <label>
+                <input type="radio" name="option" value="option2">
+                Graduate
+            </label>
+            <label>
+                <input type="radio" name="option" value="option3">
+                Master
+            </label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
